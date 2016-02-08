@@ -1,0 +1,74 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!--
+        Folio Dos by FWT
+        www.freewebsitetemplat.es
+        Photos by Fotogrph http://fotogrph.com/
+        Released under the Creative Commons Attribution 3.0 License.
+-->
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+
+        <title>Art Gallery</title>
+        <link href="http://fonts.googleapis.com/css?family=Antic" rel="stylesheet" type="text/css" />
+        <link rel="stylesheet" type="text/css" href="artist/css/style.css" />
+
+        <script type="text/javascript" src="artist/js/jquery-1.7.1.min.js"></script>
+        <script type="text/javascript" src="artist/js/jquery.dropotron-1.0.js"></script>	
+        <script type="text/javascript" src="artist/js/jquery.slidertron-1.0.js"></script>
+        <script type="text/javascript" src="artist/js/jquery.poptrox-1.0.js"></script>
+
+    </head>
+    <body>
+        <div id="outer">
+
+            <div id="logo">
+                <h1><a href="#">Art<span> Gallery</span></a></h1>
+            </div>
+
+            <ul id="nav">
+                <li class="first active">
+                    <a href="?op=front&do=view">Inicio</a>
+                </li>
+                <!--<li>		
+                    <a href="#">Acerca de</a>		
+                    <ul>
+                        <li>
+                            <a href="#">mi trabajo</a>		
+                        </li>
+                        <li><a href="?op=about&do=view">mi</a></li>
+                    </ul>
+                </li>-->
+                <li>
+                    <a href="?op=find&do=view">Buscar</a>
+                </li>
+                <li style="float: right">
+                    <a href="?op=login&do=view">Acceso</a>
+                </li>
+            </ul>
+
+        </div>
+        <!-- ****************************************************************************************************************** -->
+
+        {variable}
+
+        <div id="copyright">
+            Folio Dos by <a href="http://www.freewebtemplates.com">FWT</a>. Photos by <a href="http://fotogrph.com/">Fotogrph</a>.
+        </div>
+
+        <script type="text/javascript">
+            $('#nav').dropotron();
+        </script>	
+
+        <script type="text/javascript">
+            $('.gallery').poptrox({
+                overlayColor: '#222222',
+                overlayOpacity: 0.75,
+                popupCloserText: 'Close',
+                usePopupCaption: true,
+                usePopupDefaultStyling: false
+            });
+        </script>
+
+    </body>
+</html>
